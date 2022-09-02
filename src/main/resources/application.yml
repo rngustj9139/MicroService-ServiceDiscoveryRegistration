@@ -1,0 +1,11 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discoveryservice # 고유한 id역할을 한다.
+
+eureka: # Eureka 서버 자체는 기동을 하되 자기 자신은 서비스 디스커버리에 등록하지 않겠다는 의미이다. (default는 true이다.)
+  client:
+    register-with-eureka: false
+    fetch-registry: false
